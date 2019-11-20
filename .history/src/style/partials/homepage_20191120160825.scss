@@ -1,0 +1,123 @@
+.main-slider {
+    width: 100%;
+}
+
+.main-slider-slide {
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        padding-top: 51.2105263158%;
+    }
+}
+
+.main-slider-slide-content {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    height: 100%;
+
+    &__title {
+        font-weight: 800;
+        color: #ffffff;
+        font-size: 30px;
+        line-height: 45px;
+        text-transform: uppercase;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 200px;
+            height: 1px;
+            background-color: #ffffff;
+        }
+    }
+
+    &__desc {
+        color: #cccccc;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &__btn {
+        width: 391px;
+        height: 66px;
+        box-shadow: 0 8px 10px rgba(234, 89, 65, 0.25), 0 10px 29px rgba(234, 89, 65, 0);
+        border-radius: 33px;
+        background-color: #ea5941;
+        background-image: linear-gradient(to bottom, #e96541 0%, #f94c4c 100%);
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+
+        &:hover {}
+
+        &:active {}
+
+        &:focus {}
+    }
+}
+
+.slick-arrow-ms {
+    position: absolute;
+    top: 50%;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #d3d7dd;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+.slick-prev-arrow-m-s {
+    left: 0;
+    background-img: url(../img/slider-prev.png);
+}
+
+.slick-next-arrow-m-s {
+    left: 50px;
+    background-img: url(../img/slider-next.png);
+}
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+
+    &::before {
+        font-family: 'slick';
+        font-size: 6px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: '•';
+        text-align: center;
+        opacity: .25;
+        color: black;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}

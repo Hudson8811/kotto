@@ -1,0 +1,19 @@
+.main-slider {
+    width: 100%;
+}
+
+.main-slider-slide {}
+
+.main-slider-slide-content {
+    &__title {}
+
+    &__desc {}
+
+    &__btn {
+        &:hover {}
+
+        &:active {}
+
+        &:focus {}
+    }
+}
