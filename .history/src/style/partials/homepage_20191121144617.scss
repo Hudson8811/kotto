@@ -177,25 +177,23 @@
     flex-wrap: wrap;
     margin: -12px -13px;
 
-    margin-top: 19px;
 
 
     &__item {
         position: relative;
-        width: calc(1 / 3 * 100% - 26px);
-        margin: 12px 13px;
-
         &::before {
+            content: '';
             display: block;
             padding-top: 61.1246943765%;
-            content: '';
         }
 
+        width: calc(1 / 3 * 100% - 26px * 2 / 3);
+        margin: 12px 13px;
+
         .prod-and-serv-card {
-            position: absolute;
+            margin: 25px;
             z-index: 1;
-            top: 0;
-            left: 0;
+            position: absolute;
             width: 100%;
             height: 100%;
 
@@ -213,25 +211,20 @@
             }
 
             &__label {
-                position: absolute;
                 z-index: 2;
-                bottom: 1px;
-                left: 0;
-                display: flex;
-                align-items: center;
-                box-sizing: border-box;
-                min-width: 50%;
-                max-width: 54.6%;
+                max-width: 50%;
                 min-height: 51px;
-                padding: 16px 25px 16px 21px;
                 color: #6a727e;
                 background-color: #ffffff;
                 font-weight: 400;
-                font-size: 14px;
+                font-size: 18px;
                 line-height: 19px;
+                left: 0;
+                bottom: 0;
+
+                position: absolute;
 
                 &::before {
-
                     position: absolute;
                     top: 50%;
                     left: 0;
@@ -251,35 +244,8 @@
             &:focus {}
         }
 
-        &--big-on-desctop {
-            width: calc(2 / 3 * 100% - 26px);
+        &--big-on-desctop {}
 
-            &::before {
-                padding-top: 62.2%;
-            }
-
-            .prod-and-serv-card__label {
-                padding: 26px 20px 28px 23px;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 19px;
-                width: 48.5%;
-            }
-        }
-
-        &--double {
-            .prod-and-serv-card {
-                height: 47.55%;
-
-
-                &:nth-child(1) {}
-
-                &:nth-child(2) {
-                    top: auto;
-                    bottom: 0;
-                    left: 0;
-                }
-            }
-        }
+        &--double {}
     }
 }
