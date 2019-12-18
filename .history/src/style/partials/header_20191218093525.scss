@@ -1,0 +1,44 @@
+#masthead.site-header {
+
+}
+.sh-top-part {
+
+}
+
+.sh-top-logo-wrap {
+    &__logo {}
+
+    &__info {}
+
+    img {}
+
+    &:hover {}
+
+    &:active {}
+
+    &:focus {}
+}
+
+.sh-tp-addr {
+    a {
+        &:hover {}
+
+        &:active {}
+
+        &:focus {}
+    }
+}
+
+.sh-bottom-part {
+
+}
+
+.site-header-menu.container {
+    a {
+        &:hover {}
+
+        &:active {}
+
+        &:focus {}
+    }
+}

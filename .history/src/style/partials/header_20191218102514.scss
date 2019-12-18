@@ -1,0 +1,154 @@
+.site-header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    padding-top: 17px;
+}
+
+.sh-top-part {
+    width: 100%;
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+.sh-top-part-container {
+    display: flex;
+}
+
+.sh-top-logo-wrap {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    &__logo {
+        width: 74px;
+        height: 75px;
+        margin-right: 24px;
+
+        img {
+            max-width: 100%;
+            line-height: 1
+        }
+    }
+
+    &__info {
+        h1 {
+            color: #ffffff;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        p {
+            color: #cccccc;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
+
+    img {}
+
+    &:hover {}
+
+    &:active {}
+
+    &:focus {}
+}
+
+.sh-tp-addr {
+    padding-top: 17px;
+    margin-left: 49px;
+
+    p:first-child {
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            display: block;
+            width: 18px;
+            height: 18px;
+            content: '';
+            background: url('../img/map-mark.svg') no-repeat center center;
+            background-size: contain;
+        }
+    }
+
+    p:nth-child(2) {
+        color: #cccccc;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 24px;
+    }
+}
+
+.sh-tp-contact {
+    padding-top: 17px;
+    margin-left: 49px;
+
+    a {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    a:first-child {
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+
+        &::before {
+            display: block;
+            width: 18px;
+            height: 18px;
+            content: '';
+            background: url('../img/phone-icon.svg') no-repeat center center;
+            background-size: contain;
+        }
+    }
+
+    a:nth-child(2) {
+        text-decoration: underline;
+        color: #f06e4b;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+.sh-bottom-part {
+    margin-top: 27px;}
+
+.site-header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -19px;
+
+    a {
+        display: block;
+        margin: 0 19px;
+        transition-duration: .2s;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+
+        &:hover {
+            opacity: .8;
+        }
+
+        &:active {}
+
+        &:focus {}
+    }
+}
