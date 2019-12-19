@@ -10,7 +10,7 @@
 .sh-top-part {
     overflow: hidden;
     width: 100%;
-    max-height: 300px;
+    max-height: 1000px;
     padding-bottom: 12px;
     transition-duration: .2s;
     border-bottom: 1px solid rgba(255, 255, 255, .15);
@@ -332,7 +332,7 @@
         transition: max-height .4s, padding .4s, bordr-height .2s;
 
         &--mobile-open {
-            max-height: 700px;
+            max-height: 10000px;
             padding: 15px 0;
             border-top: 1px solid rgba(255, 255, 255, .15);
         }

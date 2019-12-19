@@ -30,7 +30,7 @@ $(document).ready(function () {
                         $('html').animate({ scrollTop: $(dest).offset().top - 74 }, 500);
                     }
                     else {
-                        $('html').animate({ scrollTop: $(dest).offset().top - $('.site-header .sh-top-part').height() - 30 }, 500);
+                        $('html').animate({ scrollTop: $(dest).offset().top - $('.site-header .sh-top-part').height() }, 500);
 
                     }
                 }

@@ -112,37 +112,8 @@
     .sf-tp-container-right {
         width: 100%;
     }
-
-    .sf-tp-container {
+    .sf-tp-container{
         display: flex;
         flex-direction: column-reverse;
-    }
-}
-
-
-@media screen and (max-width:650px) {
-    .site-footer-top-part {
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-}
-
-@media screen and (max-width:540px) {
-    .sf-tp-container {
-        text-align: center;
-
-    }
-
-    .sf-tp-part-col {
-        width: 100%;
-        margin-right: 0;
-    }
-
-    .sf-tp-part-cols-wrap {
-        margin-right: 0;
-    }
-
-    .sf-tp-container-left {
-        margin-top: 20px;
     }
 }

@@ -20,7 +20,7 @@ $(document).ready(function () {
     $('.sh-bottom-part').toggleClass('sh-bottom-part--mobile-open');
   });
   $('.site-header-menu a').click(function () {
-    $('.site-header-burger').removeClass('site-header-burger--active');
+    $(this).removeClass('site-header-burger--active');
     $('.sh-bottom-part').removeClass('sh-bottom-part--mobile-open');
   });
 });
